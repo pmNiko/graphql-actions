@@ -27,12 +27,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t nikodev/docker-graphql:1.0.2 .
-        docker build -t nikodev/docker-graphq .
+        docker build -t nikodev/docker-graphq:latest .
     
     - name: Push Docker Image
       run: |
         docker push nikodev/docker-graphql:1.0.2 
-        docker push nikodev/docker-graphql
+        docker push nikodev/docker-graphql:latest
         
         
    # - name: Build the Docker image
